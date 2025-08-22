@@ -1,67 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Chess Tournament Standings</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<title>Chess Tournament Standings</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
-  <div class="max-w-6xl mx-auto py-10 px-4">
-    <h1 class="text-3xl font-bold text-center mb-6">Chess Tournament Standings</h1>
-    
-    <div class="overflow-x-auto rounded-2xl shadow-lg">
-      <table class="min-w-full bg-white rounded-2xl">
-        <thead class="bg-gray-200 text-gray-700">
-          <tr>
-            <th class="py-3 px-4 text-left">#</th>
-            <th class="py-3 px-4">Avatar</th>
-            <th class="py-3 px-4 text-left">Player</th>
-            <th class="py-3 px-4">Rating</th>
-            <th class="py-3 px-4">Pts.</th>
-            <th class="py-3 px-4">Result</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200">
-          
-          <!-- Player rows -->
-          <tr><td class="py-3 px-4">1</td><td class="py-3 px-4"><img src="https://ui-avatars.com/api/?name=Kayal+Vijay" class="w-10 h-10 rounded-full mx-auto"></td><td class="py-3 px-4 font-semibold">Kayal Vijay</td><td class="py-3 px-4 text-center">1570</td><td class="py-3 px-4 text-center">1</td><td class="py-3 px-4 text-center">1b</td></tr>
-          <tr><td>2</td><td><img src="https://ui-avatars.com/api/?name=Carolus+Tang" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Carolus Tang</td><td class="text-center">1567</td><td class="text-center">1</td><td class="text-center">1w</td></tr>
-          <tr><td>3</td><td><img src="https://ui-avatars.com/api/?name=Tamal+Matilal" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Tamal Matilal</td><td class="text-center">1541</td><td class="text-center">1</td><td class="text-center">1b</td></tr>
-          <tr><td>4</td><td><img src="https://ui-avatars.com/api/?name=Chandra+Prakash" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Chandra Prakash</td><td class="text-center">1583</td><td class="text-center">0.5</td><td class="text-center">½w</td></tr>
-          <tr><td>5</td><td><img src="https://ui-avatars.com/api/?name=Dexter+Wildsmith" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Dexter Wildsmith</td><td class="text-center">–</td><td class="text-center">0.5</td><td class="text-center">½b</td></tr>
-          <tr><td>6</td><td><img src="https://ui-avatars.com/api/?name=David+Dowson" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">David Dowson</td><td class="text-center">1520</td><td class="text-center">0.5</td><td class="text-center">½w</td></tr>
-          <tr><td>7</td><td><img src="https://ui-avatars.com/api/?name=Ayush+Pradeep+Menon" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Ayush Pradeep Menon</td><td class="text-center">1237</td><td class="text-center">0.5</td><td class="text-center">½b</td></tr>
-          <tr><td>8</td><td><img src="https://ui-avatars.com/api/?name=Cecil+Sloan" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Cecil Sloan</td><td class="text-center">1596</td><td class="text-center">0.5</td><td class="text-center">½w</td></tr>
-          <tr><td>9</td><td><img src="https://ui-avatars.com/api/?name=Matthew+Pickering" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Matthew Pickering</td><td class="text-center">1464</td><td class="text-center">0.5</td><td class="text-center">½w</td></tr>
-          <tr><td>10</td><td><img src="https://ui-avatars.com/api/?name=Kevin+Markey" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Kevin Markey</td><td class="text-center">1504</td><td class="text-center">0.5</td><td class="text-center">½w</td></tr>
-          <tr><td>11</td><td><img src="https://ui-avatars.com/api/?name=Dev+Mistry" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Dev Mistry</td><td class="text-center">1192</td><td class="text-center">0.5</td><td class="text-center">½w</td></tr>
-          <tr><td>12</td><td><img src="https://ui-avatars.com/api/?name=Gareth+Holyfield" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Gareth Holyfield</td><td class="text-center">1470</td><td class="text-center">0.5</td><td class="text-center">½w</td></tr>
-          <tr><td>13</td><td><img src="https://ui-avatars.com/api/?name=Rob+Sweeney" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Rob Sweeney</td><td class="text-center">1448</td><td class="text-center">0.5</td><td class="text-center">½w</td></tr>
-          <tr><td>14</td><td><img src="https://ui-avatars.com/api/?name=Arnav+Jain" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Arnav Jain</td><td class="text-center">–</td><td class="text-center">0.5</td><td class="text-center">½w</td></tr>
-          <tr><td>15</td><td><img src="https://ui-avatars.com/api/?name=Andrei+Zhuravlev" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Andrei Zhuravlev</td><td class="text-center">1455</td><td class="text-center">0</td><td class="text-center">0w</td></tr>
-          <tr><td>16</td><td><img src="https://ui-avatars.com/api/?name=Edward+Farms" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Edward Farms</td><td class="text-center">1519</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>17</td><td><img src="https://ui-avatars.com/api/?name=Ken+Ronald" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Ken Ronald</td><td class="text-center">1552</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>18</td><td><img src="https://ui-avatars.com/api/?name=Glyn+Hill" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Glyn Hill</td><td class="text-center">1425</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>19</td><td><img src="https://ui-avatars.com/api/?name=James+Peel" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">James Peel</td><td class="text-center">1543</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>20</td><td><img src="https://ui-avatars.com/api/?name=Shrisha+Tarihalkar" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Shrisha Tarihalkar</td><td class="text-center">1526</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>21</td><td><img src="https://ui-avatars.com/api/?name=Jai+Are" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Jai Are</td><td class="text-center">987</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>22</td><td><img src="https://ui-avatars.com/api/?name=Aarav+Ghanshala" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Aarav Ghanshala</td><td class="text-center">–</td><td class="text-center">0</td><td class="text-center">0w</td></tr>
-          <tr><td>23</td><td><img src="https://ui-avatars.com/api/?name=Xander+Scott" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Xander Scott</td><td class="text-center">713</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>24</td><td><img src="https://ui-avatars.com/api/?name=Harshavardhan+Engam" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Harshavardhan Engam</td><td class="text-center">1532</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>25</td><td><img src="https://ui-avatars.com/api/?name=Lirush+Chandrakumar" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Lirush Chandrakumar</td><td class="text-center">–</td><td class="text-center">0</td><td class="text-center">0b</td></tr>
-          <tr><td>26</td><td><img src="https://ui-avatars.com/api/?name=Artem+Miller" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Artem Miller</td><td class="text-center">1413</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>27</td><td><img src="https://ui-avatars.com/api/?name=Paul+Gardiner" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Paul Gardiner</td><td class="text-center">1553</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>28</td><td><img src="https://ui-avatars.com/api/?name=Yile+Wang" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Yile Wang</td><td class="text-center">1421</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>29</td><td><img src="https://ui-avatars.com/api/?name=Nette+Robinson" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Nette Robinson</td><td class="text-center">1542</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>30</td><td><img src="https://ui-avatars.com/api/?name=Peter+Hughes" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Peter Hughes</td><td class="text-center">1324</td><td class="text-center">0</td><td class="text-center">0w</td></tr>
-          <tr><td>31</td><td><img src="https://ui-avatars.com/api/?name=Aaron+Bell" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Aaron Bell</td><td class="text-center">1408</td><td class="text-center">0</td><td class="text-center">0b</td></tr>
-          <tr><td>32</td><td><img src="https://ui-avatars.com/api/?name=Alan+Richardson" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Alan Richardson</td><td class="text-center">1514</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>33</td><td><img src="https://ui-avatars.com/api/?name=David+Scott" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">David Scott</td><td class="text-center">1212</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>34</td><td><img src="https://ui-avatars.com/api/?name=Max+Gregory" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Max Gregory</td><td class="text-center">1090</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>35</td><td><img src="https://ui-avatars.com/api/?name=Michael+Lay" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Michael Lay</td><td class="text-center">1504</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>36</td><td><img src="https://ui-avatars.com/api/?name=Richard+Keightley" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Richard Keightley</td><td class="text-center">1458</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>37</td><td><img src="https://ui-avatars.com/api/?name=Hayden+Crisp" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Hayden Crisp</td><td class="text-center">1493</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>38</td><td><img src="https://ui-avatars.com/api/?name=Otto+Bryant" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Otto Bryant</td><td class="text-center">1491</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>39</td><td><img src="https://ui-avatars.com/api/?name=Bernadette+Marie" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Bernadette Marie</td><td class="text-center">1236</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>40</td><td><img src="https://ui-avatars.com/api/?name=Bart+Gee" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Bart Gee</td><td class="text-center">–</td><td class="text-center">0</td><td class="text-center">–</td></tr>
-          <tr><td>41</td><td><img src="https://ui-avatars.com/api/?name=Nicholas+Cartwright" class="w-10 h-10 rounded-full mx-auto"></td><td class="font-semibold">Nicholas Cart
+
+<div class="max-w-6xl mx-auto py-10 px-4">
+  <h1 class="text-3xl font-bold text-center mb-6">Chess Tournament Standings</h1>
+  <div class="overflow-x-auto rounded-2xl shadow-lg">
+    <table id="standingsTable" class="min-w-full bg-white rounded-2xl">
+      <thead class="bg-gray-200 text-gray-700">
+        <tr>
+          <th class="py-3 px-4 text-left">#</th>
+          <th class="py-3 px-4">Avatar</th>
+          <th class="py-3 px-4 text-left">Player</th>
+          <th class="py-3 px-4">Rating</th>
+          <th class="py-3 px-4">Pts.</th>
+          <th class="py-3 px-4">Result</th>
+        </tr>
+      </thead>
+      <tbody id="standingsBody" class="divide-y divide-gray-200"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="gameModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+  <div class="bg-white rounded-2xl p-6 max-w-md w-full shadow-lg">
+    <h2 id="modalTitle" class="text-xl font-bold mb-4">Last Game</h2>
+    <p id="modalContent" class="mb-4"></p>
+    <button onclick="closeModal()" 
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Close</button>
+  </div>
+</div>
+
+<script>
+const players = [
+  {name:"Kayal Vijay", rating:1570, pts:1, result:"1b", lastGame:"Beat Carolus Tang as Black"},
+  {name:"Carolus Tang", rating:1567, pts:1, result:"1w", lastGame:"Lost to Kayal Vijay as White"},
+  {name:"Tamal Matilal", rating:1541, pts:1, result:"1b", lastGame:"Beat Chandra Prakash as Black"},
+  {name:"Chandra Prakash", rating:1583, pts:0.5, result:"½w", lastGame:"Drew with Dexter Wildsmith as White"},
+  {name:"Dexter Wildsmith", rating:0, pts:0.5, result:"½b", lastGame:"Drew with Chandra Prakash as Black"},
+  {name:"David Dowson", rating:1520, pts:0.5, result:"½w", lastGame:"Drew with Ayush Pradeep Menon as White"},
+  {name:"Ayush Pradeep Menon", rating:1237, pts:0.5, result:"½b", lastGame:"Drew with David Dowson as Black"},
+  {name:"Cecil Sloan", rating:1596, pts:0.5, result:"½w", lastGame:"Drew with opponent not recorded"},
+  {name:"Matthew Pickering", rating:1464, pts:0.5, result:"½w", lastGame:"Drew with opponent not recorded"},
+  {name:"Kevin Markey", rating:1504, pts:0.5, result:"½w", lastGame:"Drew with opponent not recorded"},
+  {name:"Dev Mistry", rating:1192, pts:0.5, result:"½w", lastGame:"Drew with opponent not recorded"},
+  {name:"Gareth Holyfield", rating:1470, pts:0.5, result:"½w", lastGame:"Drew with opponent not recorded"},
+  {name:"Rob Sweeney", rating:1448, pts:0.5, result:"½w", lastGame:"Drew with opponent not recorded"},
+  {name:"Arnav Jain", rating:0, pts:0.5, result:"½w", lastGame:"Drew with opponent not recorded"},
+  {name:"Andrei Zhuravlev", rating:1455, pts:0, result:"0w", lastGame:"Lost (opponent not recorded)"},
+  {name:"Edward Farms", rating:1519, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Ken Ronald", rating:1552, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Glyn Hill", rating:1425, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"James Peel", rating:1543, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Shrisha Tarihalkar", rating:1526, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Jai Are", rating:987, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Aarav Ghanshala", rating:0, pts:0, result:"0w", lastGame:"Lost (opponent not recorded)"},
+  {name:"Xander Scott", rating:713, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Harshavardhan Engam", rating:1532, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Lirush Chandrakumar", rating:0, pts:0, result:"0b", lastGame:"Lost (opponent not recorded)"},
+  {name:"Artem Miller", rating:1413, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Paul Gardiner", rating:1553, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Yile Wang", rating:1421, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Nette Robinson", rating:1542, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Peter Hughes", rating:1324, pts:0, result:"0w", lastGame:"Lost (opponent not recorded)"},
+  {name:"Aaron Bell", rating:1408, pts:0, result:"0b", lastGame:"Lost (opponent not recorded)"},
+  {name:"Alan Richardson", rating:1514, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"David Scott", rating:1212, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Max Gregory", rating:1090, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Michael Lay", rating:1504, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Richard Keightley", rating:1458, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Hayden Crisp", rating:1493, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Otto Bryant", rating:1491, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Bernadette Marie", rating:1236, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Bart Gee", rating:0, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"},
+  {name:"Nicholas Cartwright", rating:1278, pts:0, result:"0", lastGame:"Lost (opponent not recorded)"}
+];
+
+function renderTable() {
+  players.sort((a,b) => b.pts - a.pts || b.rating - a.rating);
+  const tbody = document.getElementById("standingsBody");
+  tbody.innerHTML = "";
+  players.forEach((p,i) => {
+    tbody.innerHTML += `
+      <tr>
+        <td class="py-3 px-4">${i+1}</td>
+        <td class="py-3 px-4 text-center">
+          <img src="https://ui-avatars.com/api/?name=${encodeURIComponent(p.name)}" class="w-10 h-10 rounded-full mx-auto" alt="Avatar">
+        </td>
+        <td class="py-3 px-4 font-semibold text-blue-600 cursor-pointer" onclick="showGame('${p.name}')">${p.name}</td>
+        <td class="py-3 px-4 text-center">${p.rating}</td>
+        <td class="py-3 px-4 text-center">${p.pts}</td>
+        <td class="py-3 px-4 text-center">${p.result}</td>
+      </tr>`;
+  });
+}
+
+function showGame(name) {
+  const player = players.find(p => p.name === name);
+  document.getElementById("modalTitle").innerText = `${player.name} - Last Game`;
+  document.getElementById("modalContent").innerText = player.lastGame;
+  document.getElementById("gameModal").classList.remove("hidden");
+}
+
+function closeModal() {
+  document.getElementById("gameModal").classList.add("hidden");
+}
+
+// Example live update: updateScore("Player Name", newPts, "result", "last game text")
+function updateScore(name, newPts, newResult, newGame) {
+  let p = players.find(p => p.name === name);
+  if(p) {
+    p.pts = newPts;
+    p.result = newResult;
+    p.lastGame = newGame;
+    renderTable();
+  }
+}
+
+renderTable();
+</script>
+</body>
+</html>
